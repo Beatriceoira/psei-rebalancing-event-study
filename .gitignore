@@ -1,0 +1,36 @@
+# --- Data (third-party; PSE restricts redistribution of its reports) ---
+data/raw/
+data/processed/
+pse/
+carlo01092_pse/
+*.pdf
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Secrets / local config ---
+.env
+.env.*
+*.key
+*.pem
+
+# --- Large intermediates (regenerate with event_study.py) ---
+out/stock_events.csv
+out/cars_by_stock_event.csv
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
